@@ -1,0 +1,6 @@
+{
+
+"usingComponents": {
+  "modal": "../../components/dialog-new-room/dialog-new-room"
+}
+}

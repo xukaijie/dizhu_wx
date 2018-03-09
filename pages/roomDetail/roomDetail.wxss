@@ -1,0 +1,47 @@
+/* pages/roomDetail/roomDetail.wxss */
+
+.namecon{
+
+
+
+}
+
+.namewrap{
+
+  margin-left: 110rpx;
+}
+.nametext{
+
+  margin-left: 130rpx;
+
+  font-size: 35rpx;
+}
+
+.newRoom{
+
+  margin-top:50rpx;
+  margin-bottom:50rpx;
+  padding-right:30rpx;
+  align-items:center;
+  justify-content:flex-end;
+   display: flex
+}
+
+.newRoom .add {
+
+  width:100rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  border-radius:50%;
+  text-align: center;
+  background: #eeeeee;
+}
+
+
+.round {
+
+  font-size: 35rpx;
+}
+.round-child{
+    display:inline-block
+}

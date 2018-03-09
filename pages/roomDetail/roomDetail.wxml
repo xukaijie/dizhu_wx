@@ -1,0 +1,24 @@
+<!--pages/roomDetail/roomDetail.wxml-->
+
+<modal modalHidden="{{modalHidden}}" title="赢了多少？赌神"
+    bind:sureEvent='_sureEvent'/>
+
+<view class='newRoom'>
+<view class='add' bindtap='newRound'>局结</view>
+</view>
+
+<view class='con'>
+
+    <view class='namecon namewrap'>
+        <text wx:for="{{userList}}" class='nametext'>{{item.name}}</text>
+    </view>
+
+
+    <view wx:for='{{rounds}}' wx:for-item='round' class='namecon round' >
+        <text wx:if="{{index == 0}}">总计:</text>
+        <text wx:else>第{{rounds.length-index}}局:</text>
+        <text wx:for="{{userList}}"  class='nametext round-child'>
+            {{round[item.userId]}}
+        </text>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+<text class='roleText'>赌精们，请对号入座：</text>
+  <view class="userinfo">
+    <button bindtap='selectRole' class='btn'
+              id="{{item.userId}}"
+            wx:for = "{{userList}}">
+     {{item.name}}</button>
+    </view>
+</view>

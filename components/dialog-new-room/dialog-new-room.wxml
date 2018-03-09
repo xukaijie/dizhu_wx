@@ -1,0 +1,11 @@
+<!--components/dialog-new-room/dialog-new-room.wxml-->
+<view class='con' hidden='{{modalHidden}}'>
+
+<view class='mask'>
+
+<text>{{title}}:</text><input bindinput="bindReplaceInput"></input>
+
+
+<button bindtap='sureClick'>确定</button>
+</view>
+</view>

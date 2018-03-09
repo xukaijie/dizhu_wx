@@ -1,0 +1,53 @@
+/* pages/room/room.wxss */
+
+.newRoom{
+
+  margin-top:50rpx;
+  margin-bottom:50rpx;
+  padding-right:30rpx;
+  align-items:center;
+  justify-content:flex-end;
+   display: flex
+}
+
+.newRoom .add {
+
+  width:100rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  border-radius:50%;
+  text-align: center;
+  background: #eeeeee;
+}
+
+.roomContainer{
+
+  padding: 20rpx 50rpx;
+
+  border-radius:5rpx;
+
+  border:1rpx solid #eee;
+
+  box-shadow:  0 4rpx 0 #aaaaaa;
+}
+
+.roomName{
+
+  font-size:28rpx;
+  margin-bottom:40rpx;
+}
+
+.roomName text:first-child{
+
+  color:green
+}
+
+.roomTime{
+
+  font-size: 28rpx;
+}
+
+.roomTime text:first-child{
+
+  color:green
+}

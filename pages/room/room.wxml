@@ -1,0 +1,17 @@
+<!--pages/room/room.wxml-->
+
+<modal modalHidden="{{modalHidden}}" bind:sureEvent='_sureEvent'/>
+<view class='newRoom'>
+<view class='add' bindtap='newRoom'>+</view>
+</view>
+
+<View wx:for='{{roomList}}' 
+    class='roomContainer"' bindtap="clickRoom" id="{{item.roomId}}" >
+  <view class='roomName'>
+    <text>名称：</text><text>{{item.name}}</text>
+  </view>
+
+  <view class='roomTime'>
+    <text>创建时间：</text><text>{{item.createTime}}</text>
+  </view>
+</View>
