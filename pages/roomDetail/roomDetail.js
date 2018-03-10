@@ -151,5 +151,10 @@ Page({
 
       modalHidden:false
     })
+  },
+
+  refresh:function(){
+
+    this.getRommDetail(this.data.roomId)
   }
 })

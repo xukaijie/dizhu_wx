@@ -2,5 +2,7 @@
 
   "usingComponents": {
     "modal": "../../components/dialog-new-room/dialog-new-room"
-  }
+  },
+
+  "navigationBarTitleText": "房间列表"
 }

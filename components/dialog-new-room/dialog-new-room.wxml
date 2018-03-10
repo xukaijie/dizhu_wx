@@ -3,7 +3,7 @@
 
 <view class='mask'>
 
-<text>{{title}}:</text><input bindinput="bindReplaceInput"></input>
+<text>{{title}}:</text><input bindinput="bindReplaceInput" type="{{inType}}"></input>
 
 
 <button bindtap='sureClick'>确定</button>

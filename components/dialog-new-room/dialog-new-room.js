@@ -14,7 +14,13 @@ Component({
 
       type:String,
       value:"内容"
-    } 
+    } ,
+
+    inType:{
+
+      type:String,
+      value:'text'
+    }
   },
 
   /**
@@ -31,6 +37,9 @@ Component({
 
 
     sureClick: function(){
+
+      if (!this.data.name)
+        return;
 
       this.triggerEvent("sureEvent", {name:this.data.name})
     },
