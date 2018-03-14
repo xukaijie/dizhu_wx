@@ -25,12 +25,16 @@ const getJson = (url,params={})=>{
       paramArray.push(key+'='+params[key]);
     }
     var urlString = paramArray.length === 0?url:url+'?'+ paramArray.join('&');
-
+  wx.showLoading({
+    title: '正在加载',
+  })
     return new Promise((resolve, reject) => {
       wx.request({
         url: urlString,
         method: 'GET',
         success: res => {
+          wx.hideLoading()
+          wx.hideLoading()
           if (!checkCode(res)) {
             reject(res)
           }
@@ -39,7 +43,7 @@ const getJson = (url,params={})=>{
           }
         },
         fail: err => {
-
+          wx.hideLoading()
           console.log(err);
           wx.showToast({
             title: '失败',
@@ -60,13 +64,16 @@ const postJson = (url,data = {},params = {}) => {
     paramArray.push(key + '=' + params[key]);
   }
   var urlString = paramString.length === 0 ? url : '?' + paramArray.join('&');
-
+  wx.showLoading({
+    title: '正在加载',
+  })
   return new Promise((resolve, reject) => {
     wx.request({
       url: urlString,
       method: 'POST',
       data: data,
       success: res => {
+        wx.hideLoading()
         if (!checkCode(res)) {
           reject(res)
         }
@@ -75,6 +82,7 @@ const postJson = (url,data = {},params = {}) => {
         }
       },
       fail: err => {
+        wx.hideLoading();
         wx.showToast({
           title: '失败',
           content:err,
