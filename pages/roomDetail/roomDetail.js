@@ -11,7 +11,8 @@ Page({
     rounds:[],
     modalHidden: true,
     cureentUserId:"",
-    roomId:""
+    roomId:"",
+    userList:[],
   },
 
   /**
@@ -102,10 +103,9 @@ Page({
 
     this.setData({
 
-      modalHidden: true
+      modalHidden: true,
     })
 
-    console.log(e.detail.name);
     var num = parseInt(e.detail.name);
 
     if (typeof num !== 'number'){
@@ -149,7 +149,8 @@ Page({
 
     this.setData({
 
-      modalHidden:false
+      modalHidden:false,
+
     })
   },
 
